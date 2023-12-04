@@ -6,14 +6,6 @@
 </head>
 <body>
     <div>
-        {% for message in get_flashed_messages(category_filter=["success"]) %}
-        <div class="flash-success">{{ message }}</div>
-        {% endfor %}
-        
-        {% for message in get_flashed_messages(category_filter=["error"]) %}
-        <div class="flash-error">{{ message }}</div>
-        {% endfor %}
-        
 
         <form action="{{ url_for('register') }}" method="POST">
             <div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/house_details.css') }}">
+</head>
+<body>
+    <header>
+        <h1>House Details</h1>
+    </header>
+    <main>
+        <div class="house-container">
+            <h2>{{ house.house_address }}</h2>
+            <img src="{{ url_for('static', filename='images/' + house.house_image) }}" alt="House Image" style="width:500px; height:auto;">
+            <p><strong>Number of Bedrooms:</strong> {{ house.number_of_bedrooms }}</p>
+            <p><strong>Number of Bathrooms:</strong> {{ house.number_of_bathrooms }}</p>
+            <p><strong>Maximum Occupancy:</strong> {{ house.maximum_occupancy }}</p>
+            <p><strong>Rental per Night:</strong> ${{ house.rental_per_night }}</p>
+        </div>
+        {% if role == 'admin' %}
+        <a href="{{ url_for('admin_dashboard') }}">Back to Dashboard</a>
+        {% elif role == 'staff' %}
+        <a href="{{ url_for('staff_dashboard') }}">Back to Dashboard</a>
+        {% else %}
+        <a href="{{ url_for('customer_dashboard') }}">Back to Dashboard</a>
+        {% endif %}        
+    </main>
+</body>
+</html>

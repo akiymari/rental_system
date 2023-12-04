@@ -48,7 +48,11 @@ CREATE TABLE IF NOT EXISTS holiday_houses (
 
 INSERT INTO customer (name, customer_number, address, email, phone_number, password, username) VALUES
 ('John Doe', 'CUST001', '123 Main St', 'johndoe@example.com', '021-456-7890', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'john'),
-('Jane Smith', 'CUST002', '456 Oak St', 'janesmith@example.com', '021-567-8901', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'jane');
+('Jane A', 'CUST002', '456 Oak St', 'janea@example.com', '021-567-8900', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'a'),
+('Jane B', 'CUST003', '451 Oak St', 'janeb@example.com', '021-567-8901', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'b'),
+('Jane C', 'CUST004', '453 Oak St', 'janec@example.com', '021-567-8902', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'c'),
+('Jane D', 'CUST005', '456 Oak St', 'janed@example.com', '021-567-8903', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'd'),
+('Jane E', 'CUST006', '457 Oak St', 'janee@example.com', '021-567-8904', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'e');
 
 INSERT INTO staff (name, staff_number, email, phone_number, date_joined, password, username) VALUES
 ('Alice Johnson', 'STAFF001', 'alice@example.com', '345-678-9012', '2023-01-10', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'alice'),
@@ -59,7 +63,26 @@ INSERT INTO admin (name, email, phone_number, password, username) VALUES
 ('Admin', 'admin@lincoln.com', '021-890-1234', 'scrypt:32768:8:1$m4QM6tOcxqnUY92t$b87bb8487e328faf42e2fb4dff134fe7fc85e2e69560e96f47c8d2255ba314ae24026bf7d7ad89ad0e95a5e73af3a733cf75a0828fab3dd66dca5e14d57931bd', 'adminuser');
 
 INSERT INTO holiday_houses (house_address, number_of_bedrooms, number_of_bathrooms, maximum_occupancy, rental_per_night, house_image) VALUES
-('House Address 1', 3, 2, 6, 150.00, 'image_path_or_url_1'),
-('House Address 2', 4, 3, 8, 200.00, 'image_path_or_url_2');
+('House Address 1', 3, 2, 6, 150.00, '1.jpeg'),
+('House Address 2', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 3', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 4', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 5', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 6', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 7', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 8', 4, 3, 8, 200.00, '2.jpeg'),
+('House Address 9', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 10', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 11', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 12', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 13', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 14', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 15', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 16', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 17', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 18', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 19', 4, 3, 8, 200.00, '1.jpeg'),
+('House Address 20', 4, 3, 8, 200.00, '1.jpeg');
+
 
 

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 header {
@@ -12,47 +12,17 @@ header {
     padding: 1em 0;
 }
 
-header h1 {
-    margin: 0;
-}
-
 main {
+    background-color: #fff;
     padding: 20px;
-}
-
-.flash-success, .flash-error {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    color: #ffffff;
-}
-
-.flash-success {
-    background-color: #4CAF50; /* Green */
-}
-
-.flash-error {
-    background-color: #f44336; /* Red */
-}
-
-section {
-    background-color: #ffffff;
-    padding: 15px;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
 }
 
-section h2 {
-    color: #333;
-}
-
-form {
-    margin-top: 15px;
-}
-
-form div {
-    margin-bottom: 10px;
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
@@ -79,14 +49,4 @@ button {
 
 button:hover {
     background-color: #666;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }

@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 400px; 
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -24,6 +24,7 @@ form {
 
 form div {
     margin-bottom: 15px;
+    
 }
 
 label {
@@ -36,7 +37,7 @@ input[type="text"], input[type="password"] {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't increase size */
+    box-sizing: border-box;
 }
 
 button {
@@ -67,13 +68,15 @@ a:hover {
 }
 
 .flash-error {
-    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: red;
 }
 
 .flash-success {
-    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: green;
 }

@@ -1,5 +1,5 @@
 dbuser = "root" 
 dbpass = "Hello2023^^" 
-dbhost = "localhost" 
+dbhost = "127.0.0.1" 
 dbport = "5000"
 dbname = "r"

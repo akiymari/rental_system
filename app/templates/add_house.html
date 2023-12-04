@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if house %}Edit{% else %}Add{% endif %} House</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add_house.css') }}">
+</head>
+<body>
+    <h2>{% if house %}Edit{% else %}Add{% endif %} Holiday House</h2>
+    <form action="{{ url_for('edit_house', house_id=house.house_id) if house else url_for('add_house') }}" method="post">
+
+        <label for="house_address">House Address:</label>
+        <input type="text" id="house_address" name="house_address" required>
+
+        <label for="number_of_bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="number_of_bedrooms" name="number_of_bedrooms" required>
+
+        <label for="number_of_bathrooms">Number of Bathrooms:</label>
+        <input type="number" id="number_of_bathrooms" name="number_of_bathrooms" required>
+
+        <label for="maximum_occupancy">Maximum Occupancy:</label>
+        <input type="number" id="maximum_occupancy" name="maximum_occupancy" required>
+
+        <label for="rental_per_night">Rental Per Night:</label>
+        <input type="text" id="rental_per_night" name="rental_per_night" required>
+
+        <label for="house_image">House Image (filename):</label>
+        <input type="text" id="house_image" name="house_image">
+
+        <button type="submit">{% if house %}Update{% else %}Add{% endif %} House</button>
+    </form>
+    {% if role == 'admin' %}
+    <a href="{{ url_for('admin_dashboard') }}">Back to Dashboard</a>
+    {% elif role == 'staff' %}
+    <a href="{{ url_for('staff_dashboard') }}">Back to Dashboard</a>
+    {% endif %}
+</body>
+</html>
